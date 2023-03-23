@@ -1,0 +1,48 @@
+version: 1
+project:
+  title: Computational modeling of anoctamin 1 calcium-activated chloride channels as pacemaker channels in interstitial cells of Cajal
+  authors:
+    - name: Leyla Noroozbabaee
+      affiliations:
+        - Auckland Bioengineering Institute, University of Auckland, New Zealand
+      corresponding: true
+      orcid: 0000-0003-0416-1541
+      email: l.noroozbabaee@auckland.ac.nz
+    - name: David P. Nickerson
+      orcid: 0000-0003-4667-9779
+      affiliations:
+        - Auckland Bioengineering Institute, University of Auckland, New Zealand
+    - name: Peng Du
+      orcid: 0000-0002-6913-7545
+      affiliations:
+        - Auckland Bioengineering Institute, University of Auckland, New Zealand
+      note: Nominated from the primary publication authors to be a co-author
+  keywords:
+    - interstitial cells of Cajal
+    - computational model
+    - OpenCOR
+    - CellML
+    - ionic current
+  open_access: true
+  license: CC-BY-4.0
+  subject: Original
+  date: 2023/01/11
+  doi: 10.36903/physiome.21760691
+  numbering:
+    heading_2: true
+    heading_3: true
+site:
+  title: Computational modeling of anoctamin 1 calcium-activated chloride channels as pacemaker channels in interstitial cells of Cajal
+  projects:
+    - slug: S000015
+      path: .
+  nav: []
+  actions:
+    - title: paper
+      url: Noroozbabaee2022PhysiomeS000015.pdf
+      static: true
+    - title: omex
+      url: Noroozbabaee2022PhysiomeS000015.omex
+      static: true
+    - title: primary
+      url: https://doi.org/10.1152/ajpgi.00449.2013
