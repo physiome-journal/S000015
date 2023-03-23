@@ -1,6 +1,8 @@
 version: 1
 project:
-  title: Computational modeling of anoctamin 1 calcium-activated chloride channels as pacemaker channels in interstitial cells of Cajal
+  title: >-
+    Computational modeling of anoctamin 1 calcium-activated chloride channels as
+    pacemaker channels in interstitial cells of Cajal
   authors:
     - name: Leyla Noroozbabaee
       affiliations:
@@ -32,7 +34,9 @@ project:
     heading_2: true
     heading_3: true
 site:
-  title: Computational modeling of anoctamin 1 calcium-activated chloride channels as pacemaker channels in interstitial cells of Cajal
+  title: >-
+    Computational modeling of anoctamin 1 calcium-activated chloride channels as
+    pacemaker channels in interstitial cells of Cajal
   projects:
     - slug: S000015
       path: .
