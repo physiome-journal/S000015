@@ -85,7 +85,7 @@ The model constituents vary according to the different model configurations, in 
 \subsection{Model Implementation}
 The implementation of the model was performed using CellML \citep{doi:10.1177/0037549703040939}. Some simulation values stated in \citet{lees2014computational} resulted in different model behaviour. We adjusted them as outlined in \autoref{tab:Inconsistency}. The simulation experiments presented here were performed using OpenCOR (Snapshot 2021-10-5).
 
-The simulation experiments in \citet[Figures 4 \& 5 ]{lees2014computational} were produced in various stages corresponding to the model variations, as summarised in \autoref{tab:variations}. We implemented the model configuration for each variation using the related parameters input file for each. For example, to produce the data related to the model variation `H-Cl (NaV)', we load the model configuration file `HCl-NSV.json' and we choose the CSV files ( Fig4-1a \& Fig4-1b) to hold the data. For more detailed information, see \autoref{ICC-model} and the simulation folder in the mentioned workspace (`ICC-Lees-Green.py'). Then, we executed the Python script to plot the related data corresponding to each figure.
+The simulation experiments in \citet[Figures 4 \& 5 ]{lees2014computational} were produced in various stages corresponding to the model variations, as summarised in \autoref{tab:variations}. We implemented the model configuration for each variation using the related parameters input file for each. For example, to produce the data related to the model variation `H-Cl (NaV)', we load the model configuration file \texttt{HCl-NSV.json} and we choose the CSV files ( Fig4-1a \& Fig4-1b) to hold the data. For more detailed information, see \autoref{ICC-model} and the simulation folder in the mentioned workspace (\texttt{ICC-Lees-Green.py}). Then, we executed the Python script to plot the related data corresponding to each figure.
 Experimental conditions specific to each variations are given in \autoref{tab:variations}. 
 
 \section{Model Modifications}
@@ -265,19 +265,19 @@ $\downarrow$Variation--\ Current$\rightarrow $ &  & $I_{Ano1}$ & $I_{CaT}$ & $I_
 We employed the Engauge Digitizer software \citep{mark_mitchell_2020_3941227} to extract the data from all figures from  \citet{lees2014computational} to present alongside the results of the present work. The reproduction of all figures of \citet{lees2014computational} is given in Figures 1-3, which show good agreement against the data of the primary paper. Solid lines show the output from this curation effort, and stars show discrete points found by the Engauge Digitizer of the figures in the primary paper.
 \begin{figure}[ht!]\centering
 \includegraphics[width=1.00\linewidth]{Figure3.pdf}
-\caption{The primary data (*) of \cite[Figure 3]{lees2014computational} with our reproduction of all subfigures. To reproduce \citet[Figure 3]{lees2014computational}, use the Python script `IAno1.py` to produce the simulation results and 'Plot$_{\_}$Fig3$_{\_}$Ano1.py' to plot the results. A–C: simulated voltage-clamp experiments to test the response of the Ano1 model to the voltage protocol.}
+\caption{The primary data (*) of \cite[Figure 3]{lees2014computational} with our reproduction of all subfigures. To reproduce \citet[Figure 3]{lees2014computational}, use the Python script \texttt{IAno1.py} to produce the simulation results and \texttt{Plot\_Fig3\_Ano1.py} to plot the results. A–C: simulated voltage-clamp experiments to test the response of the Ano1 model to the voltage protocol.}
 \label{fig:fig3}
 \end{figure}
 \newpage
 \begin{figure}[ht!]%\centering
 \hspace*{-2.6cm} \includegraphics[scale=0.55]{Figure4.pdf}
-\caption{The primary data (*) of \cite[Figure 4]{lees2014computational} with our reproduction of all subfigures. To reproduce \cite[Figure 4]{lees2014computational}, use the Python script 'ICC$_{\_}$Lees$_{\_}$Green.py' to produce the simulation results and 'Plot$_{\_}$Fig4$_{\_}$ICC.py' to plot the results. A-H: membrane potentials were simulated using the wild-type (WT) and Ano1 knockout (KO) scenarios (blue and red lines, respectively).}
+\caption{The primary data (*) of \cite[Figure 4]{lees2014computational} with our reproduction of all subfigures. To reproduce \cite[Figure 4]{lees2014computational}, use the Python script \texttt{ICC\_Lees\_Green.py} to produce the simulation results and \texttt{Plot\_Fig4\_ICC.py} to plot the results. A-H: membrane potentials were simulated using the wild-type (WT) and Ano1 knockout (KO) scenarios (blue and red lines, respectively).}
 \label{fig:fig4}
 \end{figure}
 
 \begin{figure}[ht!]%\centering
 \includegraphics[width=1\linewidth]{Figure5.pdf}
-\caption{The primary data (*) of  \cite[Figure 5]{lees2014computational} with our reproduction of all subfigures. To reproduce \cite[Figure 5]{lees2014computational}, use the Python script 'ICC$_{\_}$Lees$_{\_}$Green.py' to produce the simulation results and 'Plot$_{\_}$Fig5$_{\_}$ICC.py' to plot the results. A-D: membrane potentials simulated using the wild-type (WT) and Ano1 knockout (KO) scenarios (blue and red lines, respectively).}
+\caption{The primary data (*) of  \cite[Figure 5]{lees2014computational} with our reproduction of all subfigures. To reproduce \cite[Figure 5]{lees2014computational}, use the Python script \texttt{ICC\_Lees\_Green.py} to produce the simulation results and \texttt{Plot\_Fig5\_ICC.py} to plot the results. A-D: membrane potentials simulated using the wild-type (WT) and Ano1 knockout (KO) scenarios (blue and red lines, respectively).}
 \label{fig:fig5}
 \end{figure}
 
