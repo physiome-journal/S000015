@@ -19,6 +19,24 @@ project:
       affiliations:
         - Auckland Bioengineering Institute, University of Auckland, New Zealand
       note: Nominated from the primary publication authors to be a co-author
+  editors:
+    - name: Karin Lundengård
+      orcid: 0000-0001-7600-8218
+      role: Editor
+      affiliations:
+        - >-
+          Integrative Systems Biology, Department of Biomedical Engineering,
+          Linköping University, Linköping, Sweden
+    - name: Weiwei Ai
+      orcid: 0000-0001-5602-5707
+      role: Curator
+      affiliations:
+        - Auckland Bioengineering Institute, University of Auckland, New Zealand
+  history:
+    - date: 2022/12/04
+      type: accepted
+    - date: 2023/01/11
+      type: published
   keywords:
     - interstitial cells of Cajal
     - computational model
@@ -33,6 +51,7 @@ project:
   numbering:
     heading_2: true
     heading_3: true
+    heading_4: true
 site:
   title: >-
     Computational modeling of anoctamin 1 calcium-activated chloride channels as
