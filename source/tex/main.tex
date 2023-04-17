@@ -60,24 +60,36 @@ The model uses a Hodgkin-Huxley type formulation. The cell membrane lipid bilaye
 \end{equation} 
 There are 12 different ion conductances in this model (to see the components of the model, see \autoref{tab:variations} and the equations below). We noted that the total ionic current and total flux vary according to the different model variations.
 For the following model variations: High-Cl(NaV: voltage activated Na Channel), High-Cl(NSV: Voltage Activated Non-Selective Channel), High-Cl(NSCC: Ca$^{2+}$ Activated Non-Selective Channel), and Low-Cl(NaV: Voltage Activated Na$^{+}$ Channel); Equations \ref{eq:4}, \ref{eq:5}, \ref{eq:6}, and \ref{eq:7} represent the total ionic current, respectively. \autoref{eq:8} is used to calculate the cytosolic Ca$^{2+}$ concentrations for all the above mentioned model variations.
-\begin{align}
-I_{tot}(\text{\footnotesize{HCl-NaV}}) &= I_{SOC}+I_{Ano1}+I_{CaT}+I_{BK}+I_{BNa}+I_{NaV},  \label{eq:4} \\
-I_{tot}(\text{\footnotesize{HCl-NSV}}) &= I_{SOC}+I_{Ano1}+I_{CaT}+I_{BK}+I_{BNa}+I_{NSV},\label{eq:5} \\
-I_{tot}(\text{\footnotesize{HCl-NSCC}}) &= I_{SOC}+I_{Ano1}+I_{CaT}+I_{BK}+I_{BNa}+I_{NSCC}, \label{eq:6} \\
-I_{tot}(\text{\footnotesize{LCl-NaV}}) &= I_{SOC}+I_{Ano1}+I_{CaT}+I_{BK}+I_{BNa}+I_{NaV}+ I_{KV}+I_{KERG}, \label{eq:7}\\
-\frac {d(Ca_{i})}{d(time)} &= fc*(J_{IPR}-J_{SERCA}+J_{SOC}+J_{CaT}-J_{PMCA}). \label{eq:8} 
-\end{align}
+\begin{equation}
+  I_{tot}(\text{\footnotesize{HCl-NaV}}) = I_{SOC}+I_{Ano1}+I_{CaT}+I_{BK}+I_{BNa}+I_{NaV},  \label{eq:4}
+\end{equation}
+\begin{equation}
+  I_{tot}(\text{\footnotesize{HCl-NSV}}) = I_{SOC}+I_{Ano1}+I_{CaT}+I_{BK}+I_{BNa}+I_{NSV},\label{eq:5}
+\end{equation}
+\begin{equation}
+  I_{tot}(\text{\footnotesize{HCl-NSCC}}) = I_{SOC}+I_{Ano1}+I_{CaT}+I_{BK}+I_{BNa}+I_{NSCC}, \label{eq:6}
+\end{equation}
+\begin{equation}
+  I_{tot}(\text{\footnotesize{LCl-NaV}}) = I_{SOC}+I_{Ano1}+I_{CaT}+I_{BK}+I_{BNa}+I_{NaV}+ I_{KV}+I_{KERG}, \label{eq:7}
+\end{equation}
+\begin{equation}
+  \frac {d(Ca_{i})}{d(time)} = fc*(J_{IPR}-J_{SERCA}+J_{SOC}+J_{CaT}-J_{PMCA}). \label{eq:8} 
+\end{equation}
 
 The High-Cl(CaV: Voltage-Activated Ca$^{2+}$ channel) model variation incorporates a long-lasting voltage-gated Ca$^{2+}$ channel (I$_{CaV}$), so the total ionic current across the membrane is following \autoref{eq:9}. We used \autoref{eq:10} to determine the change in cytosolic Ca$^{2+}$.
-\begin{align}
-I_{tot}(\text{\footnotesize{HCl-CaV}}) &= I_{SOC}+I_{Ano1}+I_{CaT}+I_{BK}+I_{BNa}+I_{CaV}, \label{eq:9} \\
-\frac {d(Ca_{i})}{d(time)}&= fc*(J_{IPR}-J_{SERCA}+J_{SOC}+J_{CaT}+J_{CaV}-J_{PMCA}).\label{eq:10}    
-\end{align}
+\begin{equation}
+I_{tot}(\text{\footnotesize{HCl-CaV}}) = I_{SOC}+I_{Ano1}+I_{CaT}+I_{BK}+I_{BNa}+I_{CaV}, \label{eq:9}
+\end{equation}
+\begin{equation}
+\frac {d(Ca_{i})}{d(time)}= fc*(J_{IPR}-J_{SERCA}+J_{SOC}+J_{CaT}+J_{CaV}-J_{PMCA}).\label{eq:10}    
+\end{equation}
 In the case of the Low-Cl(NSCC: Ca$^{2+}$ Activated Non-Selective Channel), \autoref{eq:11} and \autoref{eq:12} are used to calculate the total ionic current and the change in cytosolic Ca$^{2+}$, respectively.
-\begin{align}
-I_{tot}(\text{\footnotesize{LCl-NSCC}}) &= I_{SOC}+I_{Ano1}+I_{CaT}+I_{BK}+I_{BNa}+I_{NSCC}+I_{NCX},\label{eq:11} \\
-\frac {d(Ca_{i})}{d(time)} &= fc*(J_{IPR}-J_{SERCA}+J_{SOC}+J_{CaT}-J_{PMCA}-J_{NCX}). \label{eq:12}    
-\end{align}
+\begin{equation}
+I_{tot}(\text{\footnotesize{LCl-NSCC}}) = I_{SOC}+I_{Ano1}+I_{CaT}+I_{BK}+I_{BNa}+I_{NSCC}+I_{NCX},\label{eq:11}
+\end{equation}
+\begin{equation}
+\frac {d(Ca_{i})}{d(time)} = fc*(J_{IPR}-J_{SERCA}+J_{SOC}+J_{CaT}-J_{PMCA}-J_{NCX}). \label{eq:12}    
+\end{equation}
 
 The model constituents vary according to the different model configurations, in regard to chloride concentrations: high chloride environment ($E_{Cl} = - 20.2$~mV, $C_{Cl} = 78$~mM), and low chloride environment ($E_{Cl} = - 49.7$~mV, $C_{Cl} = 25.85$~mM). See \autoref{tab:variations} for details on the model configurations.
 
@@ -187,6 +199,8 @@ The low chloride environment consists of two different variations:
 
 \begin{table}[ht!]
 \caption{Parameters are categorized according to each different variation. There are six different variations. These parameters are collected from \cite[Tables 2A and 2B]{lees2014computational}, and some from the appendix of the primary paper.}\label{tab:variations}
+% NOTE: This is temporary, just to get something to show for now!
+\includegraphics{table3.png}
 \centering
 \resizebox{\textwidth}{!}{
 \begin{tabular}{|l|l|l|l|l|l|a|l|a|a|a|a|l|l|}
