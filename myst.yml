@@ -3,6 +3,11 @@ project:
   title: >-
     Computational modeling of anoctamin 1 calcium-activated chloride channels as
     pacemaker channels in interstitial cells of Cajal
+  description: >-
+    Lees-Green et al. (2014) describes a biophysical computational model of
+    anoctamin 1 calcium-activated chloride channels. The system of equations and
+    simulation results are verified and reproduced.
+  thumbnail: thumbnail.png
   authors:
     - name: Leyla Noroozbabaee
       affiliations:
