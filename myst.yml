@@ -61,10 +61,6 @@ site:
   title: >-
     Computational modeling of anoctamin 1 calcium-activated chloride channels as
     pacemaker channels in interstitial cells of Cajal
-  projects:
-    - slug: S000015
-      path: .
-  nav: []
   actions:
     - title: paper
       url: Noroozbabaee2022PhysiomeS000015.pdf
@@ -74,3 +70,5 @@ site:
       static: true
     - title: primary
       url: https://doi.org/10.1152/ajpgi.00449.2013
+  domains:
+    - physiome-S000015.curve.space
